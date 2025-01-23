@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Play';
+  src:
+    local('Play Regular'),
+    local('Play-Regular'),
+    url('./assets/fonts/Play-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Play-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Play';
+  src:
+    local('Play Bold'),
+    local('Play-Bold'),
+    url('./assets/fonts/Play-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Play-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white-color: #fff;
+  --gray-one-color: #393b3c;
+  --gray-two-color: #333;
+  --gray-opacity-one-color: rgba(255, 255, 255, 0.5);
+  --gray-opacity-two-color: rgba(255, 255, 255, 0.7);
+  --gray-opacity-three-color: rgba(255, 255, 255, 0.25);
+  --gray-opacity-four-color: rgba(255, 255, 255, 0.33);
+  --black-opacity-color: rgba(0, 0, 0, 0.4);
+  --black-one-color: #000;
+  --black-two-color: #0a0b0b;
+  --violet-one-color: #8577e1;
+  --violet-two-color: #6a5dc2;
+  --violet-three-color: #b4a9ff;
+  --pink-color: #dc5dfc;
+  --green-color: #308e21;
+  --red-color-rating: #c82020;
+  --gray-color-rating: #777;
+  --gold-color-rating: #a59400;
+  --red-color-error: #ff7575;
+}

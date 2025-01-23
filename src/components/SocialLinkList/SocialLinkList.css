@@ -1,0 +1,53 @@
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer__link {
+  display: block;
+  outline: none;
+  font-size: 0;
+}
+
+.footer__link rect {
+  stroke: var(--white-color);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.footer__link path {
+  fill: var(--white-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__link:focus rect {
+  stroke: var(--violet-one-color);
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover rect {
+    stroke: var(--violet-one-color);
+  }
+
+  .footer__link:hover path {
+    fill: var(--violet-one-color);
+  }
+}
+
+.footer__link:active rect {
+  stroke: var(--violet-two-color);
+}
+
+.footer__link:active path {
+  fill: var(--violet-two-color);
+}
+
+@media (max-width: 575px) {
+  .footer__link svg {
+    width: 24px;
+    height: 24px;
+  }
+}

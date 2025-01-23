@@ -1,0 +1,54 @@
+.genres-list__poster {
+  display: block;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--black-two-color);
+}
+
+.genres-list__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--gray-opacity-three-color);
+  border-radius: 24px;
+  outline: none;
+  transition:
+    border-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.genres-list__link:focus {
+  border-color: var(--white-color);
+  transform: scale(1.06, 1.06);
+}
+
+@media (any-hover: hover) {
+  .genres-list__link:hover {
+    border-color: var(--white-color);
+    transform: scale(1.06, 1.06);
+  }
+}
+
+.genres-list__link:active {
+  border-color: var(--white-color);
+  transform: scale(1, 1);
+}
+
+.genres-list__wrapp-title-card {
+  width: 100%;
+  border-radius: 0 0 24px 24px;
+  background-color: var(--black-two-color);
+}
+
+.genres-list__title-card {
+  margin: 0;
+  padding: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: var(--white-color);
+}

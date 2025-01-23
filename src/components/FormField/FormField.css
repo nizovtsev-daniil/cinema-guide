@@ -1,0 +1,85 @@
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-field__error-text {
+  color: var(--red-color-error);
+  font-size: 12px;
+}
+
+.form-field > input {
+  padding: 16px 16px 16px 52px;
+  border: 1px solid var(--black-opacity-color);
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black-one-color);
+  background-color: var(--white-color);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-field > input::placeholder {
+  color: var(--black-opacity-color);
+}
+
+.form-field:focus-within > input {
+  outline: none;
+  border-color: var(--violet-three-color);
+}
+
+.form-field:hover > input {
+  outline: none;
+  border-color: var(--violet-three-color);
+}
+
+.form-field > input:invalid {
+  border-color: var(--red-color-error);
+}
+
+.form-field > .error {
+  border-color: var(--red-color-error);
+}
+
+.form-field__wrap-icon {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.form-field path {
+  fill: var(--black-opacity-color);
+  fill-opacity: 0.4;
+  transition:
+    fill 0.3s ease-in-out,
+    fill-opacity 0.3s ease-in-out;
+}
+
+.form-field:focus-within > .form-field__wrap-icon > svg path {
+  fill: var(--violet-three-color);
+  fill-opacity: 1;
+}
+
+@media (any-hover: hover) {
+  .form-field:hover > .form-field__wrap-icon > svg path {
+    fill: var(--violet-three-color);
+    fill-opacity: 1;
+  }
+}
+
+.form-field > input:invalid + .form-field__wrap-icon > svg path {
+  fill: var(--red-color-error);
+  fill-opacity: 1;
+}

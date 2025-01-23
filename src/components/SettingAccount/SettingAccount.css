@@ -1,0 +1,88 @@
+.setting-account__wrapper {
+  padding-bottom: 300px;
+}
+
+.setting-account__wrap-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 64px;
+  width: 100%;
+}
+
+.setting-account__wrap-data {
+  display: flex;
+  gap: 16px;
+}
+
+.setting-account__wrap-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--gray-opacity-one-color);
+}
+
+.setting-account__icon-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white-color);
+}
+
+.setting-account__wrap-icon path {
+  fill: var(--white-color);
+  fill-opacity: 1;
+}
+
+.setting-account__wrap-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.setting-account__name-data {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white-color);
+}
+
+.setting-account__data {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white-color);
+}
+
+@media (max-width: 575px) {
+  .setting-account__wrapper {
+    padding: 40px 20px 100px 20px;
+  }
+
+  .setting-account__wrap-content {
+    margin-bottom: 40px;
+  }
+
+  .setting-account__wrap-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .setting-account__name-data {
+    font-size: 14px;
+    color: var(--gray-opacity-one-color);
+  }
+
+  .setting-account__data {
+    font-size: 18px;
+  }
+
+  .setting-account__wrapper a {
+    width: 100%;
+  }
+}

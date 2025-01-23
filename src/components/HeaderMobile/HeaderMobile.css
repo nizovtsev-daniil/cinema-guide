@@ -1,0 +1,51 @@
+.header-mobile__logo {
+  flex-shrink: 0;
+  margin-right: auto;
+  width: 136px;
+  height: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-mobile__logo:focus-visible {
+  transform: scale(1.1, 1.1);
+}
+
+.header-mobile__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.header-mobile__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  outline: none;
+  font-size: 0;
+}
+
+.header-mobile__link path {
+  fill: var(--white-color);
+  fill-opacity: 1;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header-mobile__link:focus path {
+  fill: var(--violet-one-color);
+}
+
+@media (any-hover: hover) {
+  .header-mobile__link:hover path {
+    fill: var(--violet-one-color);
+  }
+}
+
+.header-mobile__link:active path {
+  fill: var(--violet-two-color);
+}
